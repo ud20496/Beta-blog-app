@@ -1,1 +1,1 @@
-This is the repository for the first beta blodg ap of the complete Ruby on Rails Developer Course
+This is the repository for the first beta blog app of the complete Ruby on Rails Developer Course
