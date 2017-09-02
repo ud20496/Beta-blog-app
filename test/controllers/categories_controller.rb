@@ -1,8 +1,8 @@
   require 'test_helper'
 
-class CategoriesControllerTest < ActionController :: TestCase
+class CategoriesControllerTest < ActionController::TestCase
   def setup
-    @category= Category.create(name:"sports")
+    @category = Category.create(name:"sports")
     @user = User.create(username: "udit",email:"uditbhola018@gmail.com",password: "Ud20496",admin:true)
   end
 
@@ -18,7 +18,7 @@ class CategoriesControllerTest < ActionController :: TestCase
   end
 
   test"should get show" do
-    get(:show, { 'id' => @category.id})
+    get(:show,{'id' => @category.id})
     assert_response :success
   end
   test "should redirect create when admin not logged in" do
@@ -28,5 +28,6 @@ class CategoriesControllerTest < ActionController :: TestCase
     end
     assert_redirected_to categories_path
   end
+
 
 end

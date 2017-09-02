@@ -5,7 +5,8 @@ class CategoryTest < ActiveSupport::TestCase
   def setup
     @category=Category.new(name: "sports")
   end
-  test"Category should be valid"do
+  test"Category should be valid" do
+    @category.name=""
     assert_not @category.valid?
 
    end
